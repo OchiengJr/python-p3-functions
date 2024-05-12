@@ -1,54 +1,44 @@
-/*
-  You should be able to call this function with no arguments and see its output in the terminal:
-  greetProgrammer();
-  => "Hello, programmer!"
-*/
+/**
+ * Greets a programmer with a default message.
+ * @returns {string} The greeting message.
+ */
 function greetProgrammer() {
-  console.log("Hello, programmer!");
+  return "Hello, programmer!";
 }
 
-/*
-  You should be able to call this function with one argument and see its output in the terminal:
-  greet("Naureen");
-  => "Hello, Naureen!"
-*/
+/**
+ * Greets a person by their name.
+ * @param {string} name - The name of the person to greet.
+ * @returns {string} The greeting message.
+ */
 function greet(name) {
-  console.log(`Hello, ${name}!`);
+  return `Hello, ${name}!`;
 }
 
-/*
-  You should be able to call this function with no arguments and see its output in the terminal:
-  greetWithDefault();
-  => "Hello, programmer!"
-
-  You should also be able to call this function with one argument and see its output in the terminal:
-  greetWithDefault("Sunny");
-  => "Hello, Sunny!"
-*/
+/**
+ * Greets a person by their name or defaults to "programmer" if no name is provided.
+ * @param {string} [name="programmer"] - The name of the person to greet.
+ * @returns {string} The greeting message.
+ */
 function greetWithDefault(name = "programmer") {
-  console.log(`Hello, ${name}!`);
+  return `Hello, ${name}!`;
 }
 
-/*
-  You should be able to call this function with two arguments and get back its return value:
-  const sum = add(1, 2);
-  console.log(sum);
-  => 3
-*/
+/**
+ * Adds two numbers.
+ * @param {number} num1 - The first number.
+ * @param {number} num2 - The second number.
+ * @returns {number} The sum of the two numbers.
+ */
 function add(num1, num2) {
   return num1 + num2;
 }
 
-/*
-  You should be able to call this function with two arguments and get back its return value:
-  const result = halve(4);
-  console.log(result);
-  => 2
-
-  If the function is called with an argument that isn't a number, it should return null:
-  const result = halve("two")
-  => null
-*/
+/**
+ * Halves a number.
+ * @param {number} number - The number to halve.
+ * @returns {number|null} The halved number, or null if the argument is not a number.
+ */
 function halve(number) {
   if (typeof number !== "number") return null;
 
